@@ -25,7 +25,7 @@ JOBS = [{
 }]
 
 
-@app.route('/home')
+@app.route('/')
 def hello_world():
   return render_template('home.html', jobs=JOBS, company_name=COMPANY_NAME)
 
@@ -36,4 +36,4 @@ def list_jobs():
 
 
 if __name__ == "__main__":
-  app.run(host='0.0.0.0', port=5000, debug=True)
+  app.run(host='0.0.0.0', port=5001, debug=True)
